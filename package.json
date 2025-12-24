@@ -1,0 +1,39 @@
+{
+  "name": "control-eisa-desktop",
+  "version": "1.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:desktop": "npm run build --prefix client && npm install --prefix server --production && electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.echevarria.control_eisa",
+    "productName": "ControlEISA",
+    "compression": "store",
+    "directories": {
+      "output": "dist-desktop"
+    },
+    "files": [
+      "main.js",
+      "client/dist/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "server",
+        "to": "server"
+      }
+    ],
+    "asarUnpack": [
+      "server/**"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "client/res/icon.ico",
+      "artifactName": "ControlEISA-${version}.exe"
+    }
+  }
+}

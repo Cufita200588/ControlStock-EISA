@@ -1,0 +1,22 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="layerA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b8a6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="layerB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f9489" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="layerC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c6f63" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="#ffffff"/>
+  <g opacity="0.78" transform="translate(48 32)">
+    <path d="M12 0L24 6L12 12L0 6Z" fill="url(#layerA)"/>
+    <path d="M12 12L24 18L12 24L0 18Z" fill="url(#layerB)"/>
+    <path d="M12 24L24 30L12 36L0 30Z" fill="url(#layerC)"/>
+  </g>
+</svg>

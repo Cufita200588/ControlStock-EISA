@@ -1,0 +1,19 @@
+*** Begin Patch
+*** Update File: package.json
+@@
+   "build": {
+     "appId": "com.echevarria.control_eisa",
+     "productName": "ControlEISA",
+     "directories": {
+       "output": "dist-desktop"
+     },
+@@
+     "win": {
+-      "target": "nsis",
++      "target": "nsis",
++      "icon": "client/res/icon.ico",
+       "artifactName": "ControlEISA-${version}.exe"
+     }
+   }
+ }
+*** End Patch
